@@ -1,13 +1,13 @@
-------------------Tutorial-----------------
+# Tutorial
 
 Contents:
 1- Initial setup
 2- Preprocessing of images
 3- Uses of different functions, with examples
 
----------------------------------------------------------------------------------------------------------------------------------
+--------------------
 
-1 - Initial Setup
+# 1 - Initial Setup
 
 Make sure to add the base folder and all subfolders to your matlab path, click the "set path" button on the home tab to do this.
 
@@ -15,7 +15,7 @@ Have a look at the ReadMe for a brief introduction to each function and the over
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-2 - Preprocessing of images
+# 2 - Preprocessing of images
 
 It is important that your images are cropped correctly before being submitted to any of the programs.
 
@@ -35,13 +35,13 @@ Therefore I recommend another file format which does not preserve transparency t
 For the best performance, input images should be of similar aspect ratios but they do not have to be identical sizes.
 
 ---------------------------------------------------------------------------------------------------------------------------------
-3 - Uses of different functions with examples
+# 3 - Uses of different functions with examples
 
 For this section we shall begin at the smaller scale functions dealing with individual images then build up to the large functions which
 combine multiple images together
 
 
-3.1    --textfilter.m--
+## 3.1    --textfilter.m--
 
 
 This function can take either filename inputs, or if you have already read an image into MatLab then that can be used too
@@ -69,7 +69,7 @@ Finally the variable Min_size determines the size of the smallest object which c
 changed depending on the style and size of the text on different sets of parchment
 
 
-3.2    --LeftLines.m and RightLines.m--
+## 3.2    --LeftLines.m and RightLines.m--
 
 
 These functions only take images which have been read in as input, not filenames. So to examine '69v.png' you need to write LeftLines(imread('69v.png'))
@@ -120,7 +120,7 @@ and the third column as orientations. Each row corresponds to an individual line
 There is code at the bottom of the programs to show the lines found on the original image to check if the program is correct
 
 
-3.3    --TestPair.m and TestPairPrint.m--
+## 3.3    --TestPair.m and TestPairPrint.m--
 
 
 These functions require as input 2 images which have been previously read in to MatLab, often it is useful to perform the textfilter 
@@ -184,7 +184,7 @@ The images produced from TestPairPrint.m have red lines from the left image, blu
 magenta squares for matching of vertical lines.
 
 
-3.4    --assignment_pairs.m , top_pairs.m , and probability_pairs.m--
+## 3.4    --assignment_pairs.m , top_pairs.m , and probability_pairs.m--
 
 
 For each of these three you input the filenames of the images which you want to find the pairs between.
@@ -213,7 +213,7 @@ scoring pairs which are in the output and are unlikely to be matches, This metho
 into a pair with another image in the input
 
 
-3.5 --biggermatches.m--
+## 3.5 --biggermatches.m--
 
 This function performs one of the functions from 3.4 on a set of input images.
 
